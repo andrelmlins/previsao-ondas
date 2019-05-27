@@ -13,18 +13,22 @@ router.route('/cidade/:cidade').get(async (req, res) => {
     $('#prev_ond').each((i, el) => {
       const dia = { previsoes: [] };
 
-      $(el)
-        .find('#ond')
-        .each((i, el) => {
+      let diaNome = $(el).find('#tit').text().trim().replace(/\s+/g,' ').split(' ');
+      dia.dia = diaNome[1];
+
+      $(el).find('#ond').each((i, el) => {
+          const altura = $(el).children().find('b').text().split(' ');
+          const vento = $(el).children().find('i').text().split(' ');
+
           dia.previsoes.push({
-            altura: $(el)
-              .children()
-              .find('b')
-              .text(),
-            vento: $(el)
-              .children()
-              .find('i')
-              .text()
+            altura: {
+              velocidade: parseFloat(altura[0]),
+              direcao: altura[1]
+            },
+            vento: {
+              altura: parseFloat(vento[0]),
+              direcao: vento[1]
+            }
           });
         });
 
