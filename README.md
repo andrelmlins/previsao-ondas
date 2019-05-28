@@ -1,6 +1,6 @@
-# Api de Previsão de ondas
+# API de Previsão de ondas
 
-API para previsão de ondas no brasil
+API de previsão de ondas no Brasil
 
 [![Build Status](https://travis-ci.com/andrelmlins/api-previsao-ondas.svg?branch=master)](https://travis-ci.com/andrelmlins/api-previsao-ondas)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/andrelmlins/api-previsao-ondas/blob/master/LICENSE)
@@ -10,10 +10,10 @@ API para previsão de ondas no brasil
 ## Build Setup
 
 ```
-# install dependencies
+# instalar as dependências
 yarn install
 
-# start the API
+# iniciar a API
 yarn start
 ```
 
