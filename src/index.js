@@ -7,6 +7,7 @@ const app = express();
 
 const LitoralController = require('./controllers/LitoralController');
 const PrevisaoOndaController = require('./controllers/PrevisaoOndaController');
+const Controller = require('./controllers/Controller');
 
 app.use(bodyParser.json({ limit: '50mb' }));
 app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
@@ -15,6 +16,7 @@ app.use(morgan('dev'));
 
 app.use('/litoral', LitoralController);
 app.use('/onda', PrevisaoOndaController);
+app.use('/', Controller);
 
 const port = process.env.PORT || 3001;
 

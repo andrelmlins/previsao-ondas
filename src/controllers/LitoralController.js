@@ -22,22 +22,26 @@ router.route('/estado/:estado').get(async (req, res) => {
 
     let dadosEstado = dados[req.params.estado];
 
-    const estado = {};
-    estado.nome = req.params.estado;
-    estado.url = fullUrl(req);
-    estado.cidades = dadosEstado.reduce((total, currentValue, index) => {
-      if (index > 0) {
-        total.push({
-          id: currentValue.id[0],
-          cidade: currentValue.local[0],
-          ondas: baseUrl(req, `/ondas/cidade/${currentValue.id[0]}`)
-        });
-      }
+    if(dadosEstado){
+      const estado = {};
+      estado.nome = req.params.estado;
+      estado.url = fullUrl(req);
+      estado.cidades = dadosEstado.reduce((total, currentValue, index) => {
+        if (index > 0) {
+          total.push({
+            id: currentValue.id[0],
+            cidade: currentValue.local[0],
+            ondas: baseUrl(req, `/ondas/cidade/${currentValue.id[0]}`)
+          });
+        }
+  
+        return total;
+      }, []);
 
-      return total;
-    }, []);
-
-    res.send({ estado });
+      res.send({ estado });
+    } else {
+      res.status(404).send({ mensagem: "Estado não consta" });
+    }
   } catch (error) {
     res.status(400).send(error.message);
   }
