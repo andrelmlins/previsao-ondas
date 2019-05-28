@@ -4,7 +4,7 @@ const router = express.Router();
 
 const { baseUrl } = require('../helpers/url');
 
-router.route('/estados').get(async (req, res) => {
+router.route('/').get(async (req, res) => {
   try {
     res.send({
         mensagem: "API de previsão de ondas no Brasil",
