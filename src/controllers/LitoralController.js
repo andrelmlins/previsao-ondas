@@ -31,7 +31,7 @@ router.route('/estado/:estado').get(async (req, res) => {
           total.push({
             id: currentValue.id[0],
             cidade: currentValue.local[0],
-            ondas: baseUrl(req, `/ondas/cidade/${currentValue.id[0]}`)
+            ondas: baseUrl(req, `/onda/cidade/${currentValue.id[0]}`)
           });
         }
   
