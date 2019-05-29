@@ -7,6 +7,8 @@ API de previsão de ondas no Brasil feita através de um WebScraping na área de
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/andrelmlins/previsao-ondas/blob/master/LICENSE)
 [![Known Vulnerabilities](https://snyk.io/test/github/andrelmlins/previsao-ondas/badge.svg)](https://snyk.io/test/github/andrelmlins/previsao-ondas)
 [![Dependencies](https://david-dm.org/andrelmlins/previsao-ondas.svg)](https://david-dm.org/andrelmlins/previsao-ondas)
+[![Badge Docker](https://images.microbadger.com/badges/image/andrelmlins1/previsao-ondas.svg)](https://microbadger.com/images/andrelmlins1/previsao-ondas "Get your own image badge on microbadger.com")
+[![Docker Pulls](https://img.shields.io/docker/pulls/andrelmlins1/previsao-ondas.svg)](https://hub.docker.com/r/andrelmlins1/previsao-ondas)
 
 ## Como rodar
 
