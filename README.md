@@ -22,11 +22,22 @@ yarn start
 
 ## Como usar
 
+Abaixo a lista básica de rotas
+
 * Estados Litorâneos -> http://previsao-ondas.herokuapp.com/litoral/estados
 * Detalhes do Estado: -> http://previsao-ondas.herokuapp.com/litoral/estado/PE
 * Previsão de Ondas por Cidade: -> http://previsao-ondas.herokuapp.com/ondas/cidade/1058
 
-## Stack
+## Docker
+
+Para utilizar a imagem docker faça os seguintes comandos.
+
+```
+$ docker pull andrelmlins1/previsao-ondas
+$ docker run -d -p 80:8080 --name andrelmlins1/previsao-ondas
+```
+
+## Tecnologias
 
 - NodeJS
 - Express
