@@ -4,6 +4,7 @@ const cheerio = require('cheerio');
 const router = express.Router();
 const request = require('../services/ondas');
 const { cleanString } = require('../helpers/clean');
+const { forcaImagem } = require('../helpers/parsers');
 
 router.route('/cidade/:cidade').get(async (req, res) => {
   try {
@@ -27,13 +28,15 @@ router.route('/cidade/:cidade').get(async (req, res) => {
       $(el).find('#ond').each((i, el) => {
           const altura = $(el).children().find('b').text().split(' ');
           const vento = $(el).children().find('i').text().split(' ');
+          const forca = $(el).children().find('img').attr('src');
           const horario = cleanString($(el).children().text()).split(' ')[0].replace('Z', ':00:00');
 
           dia.previsoes.push({
             horario,
+            forca: forcaImagem(forca),
             altura: {
               distancia: parseFloat(altura[0]),
-              direcao: altura[1]
+              direcao: altura[1],
             },
             vento: {
               velocidade: parseFloat(vento[0]),

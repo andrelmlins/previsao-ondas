@@ -20,12 +20,13 @@ router.route('/estado/:estado').get(async (req, res) => {
   try {
     const dados = await request();
 
-    let dadosEstado = dados[req.params.estado];
+    let dadosEstado = dados[req.params.estado.toUpperCase()];
 
     if(dadosEstado){
       const estado = {};
       estado.nome = req.params.estado;
       estado.url = fullUrl(req);
+
       estado.cidades = dadosEstado.reduce((total, currentValue, index) => {
         if (index > 0) {
           total.push({
