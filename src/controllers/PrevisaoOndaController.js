@@ -32,11 +32,11 @@ router.route('/cidade/:cidade').get(async (req, res) => {
           dia.previsoes.push({
             horario,
             altura: {
-              velocidade: parseFloat(altura[0]),
+              distancia: parseFloat(altura[0]),
               direcao: altura[1]
             },
             vento: {
-              altura: parseFloat(vento[0]),
+              velocidade: parseFloat(vento[0]),
               direcao: vento[1]
             }
           });
