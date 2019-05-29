@@ -1,12 +1,12 @@
-# API de Previsão de ondas
+# 🌊 API de Previsão de ondas 🌊
 
 
-API de previsão de ondas no Brasil feita através de um WebScraping na área de ondas do INPE, acesse através do [Link](https://api-previsao-ondas.herokuapp.com/).
+API de previsão de ondas no Brasil feita através de um WebScraping na área de ondas do INPE, acesse através do [Link](https://previsao-ondas.herokuapp.com/).
 
-[![Build Status](https://travis-ci.com/andrelmlins/api-previsao-ondas.svg?branch=master)](https://travis-ci.com/andrelmlins/api-previsao-ondas)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/andrelmlins/api-previsao-ondas/blob/master/LICENSE)
-[![Known Vulnerabilities](https://snyk.io/test/github/andrelmlins/api-previsao-ondas/badge.svg)](https://snyk.io/test/github/andrelmlins/api-previsao-ondas)
-[![Dependencies](https://david-dm.org/andrelmlins/api-previsao-ondas.svg)](https://david-dm.org/andrelmlins/api-previsao-ondas)
+[![Build Status](https://travis-ci.com/andrelmlins/previsao-ondas.svg?branch=master)](https://travis-ci.com/andrelmlins/previsao-ondas)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/andrelmlins/previsao-ondas/blob/master/LICENSE)
+[![Known Vulnerabilities](https://snyk.io/test/github/andrelmlins/previsao-ondas/badge.svg)](https://snyk.io/test/github/andrelmlins/previsao-ondas)
+[![Dependencies](https://david-dm.org/andrelmlins/previsao-ondas.svg)](https://david-dm.org/andrelmlins/previsao-ondas)
 
 ## Como rodar
 
@@ -20,9 +20,9 @@ yarn start
 
 ## Como usar
 
-* Estados Litorâneos -> http://api-previsao-ondas.herokuapp.com/litoral/estados
-* Detalhes do Estado: -> http://api-previsao-ondas.herokuapp.com/litoral/estado/PE
-* Previsão de Ondas por Cidade: -> http://api-previsao-ondas.herokuapp.com/ondas/cidade/1058
+* Estados Litorâneos -> http://previsao-ondas.herokuapp.com/litoral/estados
+* Detalhes do Estado: -> http://previsao-ondas.herokuapp.com/litoral/estado/PE
+* Previsão de Ondas por Cidade: -> http://previsao-ondas.herokuapp.com/ondas/cidade/1058
 
 ## Stack
 
