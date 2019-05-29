@@ -8,7 +8,16 @@ const { fullUrl, baseUrl } = require('../helpers/url');
 router.route('/estados').get(async (req, res) => {
   try {
     const dados = await request();
-    const estados = Object.keys(dados);
+    let estados = Object.keys(dados);
+
+    estados = estados.reduce((total, currentValue) => {
+      total.push({
+        abreviatura: currentValue,
+        detalhes: baseUrl(req, `/litoral/estado/${currentValue}`)
+      });
+
+      return total;
+    }, []);
 
     res.send({ estados });
   } catch (error) {
@@ -24,7 +33,7 @@ router.route('/estado/:estado').get(async (req, res) => {
 
     if(dadosEstado){
       const estado = {};
-      estado.nome = req.params.estado;
+      estado.abreviatura = req.params.estado;
       estado.url = fullUrl(req);
 
       estado.cidades = dadosEstado.reduce((total, currentValue, index) => {
