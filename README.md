@@ -1,4 +1,4 @@
-# 🌊 API de Previsão de ondas 🌊
+# 🌊 API de Previsão de Ondas 🌊
 
 
 API de previsão de ondas no Brasil feita através de um WebScraping na área de ondas do INPE, acesse através do [Link](https://previsao-ondas.herokuapp.com/).
