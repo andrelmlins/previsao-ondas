@@ -5,6 +5,18 @@ const router = express.Router();
 const request = require('../services/litoral');
 const { fullUrl, baseUrl } = require('../helpers/url');
 
+/**
+ * @swagger
+ * /litoral/estados:
+ *   get:
+ *     description: Retorna estados
+ *     produces:
+ *      - application/json
+ *     responses:
+ *       200:
+ *         description: estados
+ */
+
 router.route('/estados').get(async (req, res) => {
   try {
     const dados = await request();
@@ -24,6 +36,23 @@ router.route('/estados').get(async (req, res) => {
     res.status(400).send(error.message);
   }
 });
+
+
+/**
+ * @swagger
+ * /litoral/estado/{estado}:
+ *   get:
+ *     description: Retorna estados
+ *     produces:
+ *      - application/json
+*     parameters:
+ *      - name: estado
+ *        in: path
+ *        required: true
+ *     responses:
+ *       200:
+ *         description: cidades
+ */
 
 router.route('/estado/:estado').get(async (req, res) => {
   try {
