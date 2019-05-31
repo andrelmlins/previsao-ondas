@@ -6,6 +6,23 @@ const request = require('../services/ondas');
 const { cleanString } = require('../helpers/clean');
 const { forcaImagem } = require('../helpers/parsers');
 
+/**
+ * @swagger
+ * /onda/cidade/{cidade}:
+ *   get:
+ *     description: Retorna previsão de ondas
+ *     produces:
+ *      - application/json
+*     parameters:
+ *      - name: cidade
+ *        in: path
+ *        required: true
+ *     responses:
+ *       200:
+ *         description: ondas
+ */
+
+
 router.route('/cidade/:cidade').get(async (req, res) => {
   try {
     const dados = await request(req.params.cidade);
