@@ -20,6 +20,10 @@ yarn install
 yarn start
 ```
 
+## Documentação
+
+A documentação feita através do [Swagger](https://swagger.io/) se encontra em [Link](https://previsao-ondas.herokuapp.com/api-docs).
+
 ## Como usar
 
 Abaixo a lista básica de rotas
@@ -30,7 +34,10 @@ Abaixo a lista básica de rotas
 
 ## Docker
 
-Para utilizar a imagem docker faça os seguintes comandos.
+[![dockeri.co](https://dockeri.co/image/andrelmlins1/previsao-ondas)](https://hub.docker.com/r/andrelmlins1/previsao-ondas)
+
+A imagem docker oficial disponívelse encontra em [Dockerhub](https://hub.docker.com/r/andrelmlins1/freesoccer):
+
 
 ```
 $ docker pull andrelmlins1/previsao-ondas

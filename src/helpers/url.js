@@ -2,7 +2,7 @@ const url = require('url');
 
 function fullUrl(req) {
   return url.format({
-    protocol: req.protocol,
+    protocol: 'https',
     host: req.get('host'),
     pathname: req.originalUrl
   });
@@ -10,7 +10,7 @@ function fullUrl(req) {
 
 function baseUrl(req, pathname) {
   return url.format({
-    protocol: req.protocol,
+    protocol: 'https',
     host: req.get('host'),
     pathname
   });
