@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node src/index.js",
     "start-prod": "pm2 start ecosystem.config.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -34,6 +36,8 @@
     "swagger-jsdoc": "^3.2.9",
     "swagger-ui-express": "^4.0.5",
     "url": "^0.11.0",
-    "xml2js": "^0.4.19"
-  }
+    "xml2js": "^0.4.19",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
