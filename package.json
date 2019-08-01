@@ -31,8 +31,8 @@
     "iso-8859-2": "^1.0.0",
     "moment": "^2.24.0",
     "morgan": "^1.9.1",
-    "swagger-jsdoc": "^3.2.9",
-    "swagger-ui-express": "^4.0.5",
+    "swagger-jsdoc": "^3.3.0",
+    "swagger-ui-express": "^4.0.7",
     "url": "^0.11.0",
     "xml2js": "^0.4.19"
   }
