@@ -684,10 +684,10 @@ string_decoder@^1.1.1:
   dependencies:
     safe-buffer "~5.1.0"
 
-swagger-jsdoc@^3.3.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/swagger-jsdoc/-/swagger-jsdoc-3.3.0.tgz#67b1fc9b0a71ffe2529be423e22b3fd8487cdc61"
-  integrity sha512-O9I93uFM2/6QUPfRDW5I/dEcU54nwzjVpI0druO/EOXrGf3OKtj8wMdobGr45+ayD5uY58WrQ4hDhRa0238d0w==
+swagger-jsdoc@^3.4.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/swagger-jsdoc/-/swagger-jsdoc-3.4.0.tgz#48846c65215d59adeb3c4f4c82c3881305cd1a5e"
+  integrity sha512-lS3dpULpwQ5TSfPF9d9nxyXicTjJMgBGu74g/GQ0r247QMVsgqa6cL9sJ0NtK2IGxzG3HozBcXKv7qo+ns+hqg==
   dependencies:
     commander "2.20.0"
     doctrine "3.0.0"
