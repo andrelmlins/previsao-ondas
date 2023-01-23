@@ -28,7 +28,7 @@
     "axios": "^0.21.3",
     "cheerio": "^1.0.0-rc.3",
     "cors": "^2.8.5",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-jsdoc-swagger": "^1.6.5",
     "url": "^0.11.0",
     "xml2js": "^0.4.20"
